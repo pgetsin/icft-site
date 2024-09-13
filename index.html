@@ -1,0 +1,181 @@
+<!-- TODO
+ 1. Welcome text for hero section 
+ 2. Mobile responsiveness ------ kinda done but looks bad when going screen to screen cuz using px
+ 3. Set up git
+  -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>ICFT - Islamic Center of the Five Towns</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/54e73c8375.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        
+        <!-- NavBar -->
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <a href="#header"><img src="imgs/icft2.jpeg" class="logo"></a>
+                    <ul class="navbar" style="margin-top: -50px;" id="sidemenu">
+                        <li><a href="#header">HOME</a></li>
+                        <li><a href="#salahs">SALAH</a></li>
+                        <li><a href="#services">SERVICES</a></li>
+                        <li><a href="#donate">DONATE</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Hero -->
+        <div class="hero">
+            <div class="container2">
+                <h2>Welcome to Islamic Center of Five Towns</h2>
+                <p>437 Hamilton Ave, Hewlett, 11557</p>
+            </div>
+        </div>
+
+         <!-- Salah times -->
+          <div id="salahs">
+            <div class="container">
+                <br>
+                <br>
+                <br>
+                <h1><b>Salah Times</b></h1>
+                <div class="salah-timings">
+                    <div>
+                    <h2>Fajr</h2>
+                    <p>0:00</p>
+                </div>
+                <div>
+                    <h2>Zuhr</h2>
+                    <p>0:00</p>
+                </div>
+                <div>
+                    <h2>Asr</h2>
+                    <p>0:00</p>
+                </div>
+                <div>
+                    <h2>Maghrib</h2>
+                    <p>0:00</p>
+                </div>
+                <div>
+                    <h2>Isha</h2>
+                    <p>0:00</p>
+                </div>
+                <div>
+                    <h2>Jummah</h2>
+                    <p>0:00</p>
+                </div>
+                </div>
+                </div>
+            </div>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+
+         <!-- Services -->
+            <div id="services">
+                <div class="container">
+                    <br>
+                    <br>
+                    <br>
+                    <h1><b>Services</b></h1>
+                    <div class="services-list">
+                        <div>
+                            <i class="fa-solid fa-book-open"></i>
+                            <h2>QURAN CLASSES</h2>
+                            <p>Learn how to read the Quran</p>
+                            <a href="#"></a>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-skull-crossbones"></i>
+                            <h2>FUNERAL SERVICE</h2>
+                            <p>Lorem, ipsum dolor.</p>
+                            <a href="#"></a>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-ring"></i>
+                            <h2>NIKAH SERVICE</h2>
+                            <p>Lorem, ipsum dolor.</p>
+                            <a href="#"></a>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-book"></i>
+                            <h2>SCHOLARS</h2>
+                            <p>Lorem, ipsum dolor.</p>
+                            <a href="#"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quran AOTD (Ayah of the day) -->
+            <div class="ayahs">
+                <div class="container">
+                    <h1>Al-Quran</h1>
+                    <div class="verse-of-the-day">
+                        <h2>Verse of the Day</h2>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+            </div>
+            
+
+            <!-- Donate -->
+            <div id="donate">
+                <div class="container">
+                    <div class="masjid-fund">
+                    <h3>"Whoever builds a Masjid for Allah, Allah will build for him a house in Paradise" -The Prophet Muhammad ﷺ</h3>
+                    <button class="btn">Masjid Fund</button>
+                    </div>
+                    <div class="sadaqah">
+                    <h3>"Sadaqah extinguishes sins just as water extinguishes fire." -The Prophet Muhammad ﷺ</h3><br>
+                    <button class="btn">Sadaqah</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- copyright -->
+             <div class="copyright">
+                <p><i class="fa-regular fa-copyright"></i> Islamic Center of Five Towns, All Rights Reserved.</p>
+                <div class="social-media">
+                    <div class="facebook">
+                    <a href="https://www.facebook.com/p/ICFT-Islamic-Center-of-Five-Towns-100067169212893/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                    <div class="insta">
+                    <a href="https://www.instagram.com/explore/locations/130922823783332/icft-islamic-center-of-five-towns" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+             </div>
+    </body>
+</html>
+
+
+
+
+<!-- scripts -->
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+    
+
+</script>
